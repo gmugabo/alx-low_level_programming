@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * print_lines - print a straight line
+ * print_line - straight line
  * @n: number of times
  * Return: Always 0
  */
 
-void print_lines(int n)
+void print_line(int n)
 {
 	int i;
 
