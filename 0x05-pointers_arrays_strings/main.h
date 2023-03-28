@@ -14,5 +14,6 @@ char *_strcpy(char *dest, char *src);
 int _atoi(char *s);
 int _putchar(char c);
 int _putchar(char s);
+#include <stdio.h>
 
 #endif
