@@ -18,11 +18,13 @@ char *_strstr(char *haystack, char *needle)
 		return (haystack);
 	}
 	{
-		while (*haystack){
+		while (*haystack)
+		{
 			p1 = haystack;
 			p2 = needle;
 
-			while (*p2 && *p1 == *p2){
+			while (*p2 && *p1 == *p2)
+			{
 				p1++;
 				p2++;
 			}
