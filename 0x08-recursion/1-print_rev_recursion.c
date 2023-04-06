@@ -8,9 +8,16 @@
 void _print_rev_recursion(char *s)
 {
 	int rvrs = 0;
+	char *r = s;
 
-	while (s[rvrs])
+	while (*r)
+	{
 		rvrs++;
-	while (rvrs--)
-		_putchar(s[rvrs]);
+		r++;
+	}
+	while (rvrs > 0)
+	{
+		_putchar(*(s + rvrs - 1));
+		rvrs--;
+	}
 }
