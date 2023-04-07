@@ -15,4 +15,5 @@ int helper_sqrt_recursion(int n, int i);
 int helper_prime(int n, int i);
 int helper_palindrome(char *s, int i, int j);
 int _strlen_recursion(char *s);
+int helper_wildcmp(char *s1, char *s2);
 #endif
