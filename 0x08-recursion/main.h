@@ -13,4 +13,6 @@ int wildcmp(char *s1, char *s2);
 int _putchar(char c);
 int helper_sqrt_recursion(int n, int i);
 int helper_prime(int n, int i);
+int helper_palindrome(char *s, int i, int j);
+int _strlen_recursion(char *s);
 #endif
