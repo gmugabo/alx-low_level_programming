@@ -21,9 +21,11 @@ int _sqrt_recursion(int n)
 
 /**
  * helper_sqrt_recursion - helper function
- * Description: helper function
+ * Description: 'helper function'
  * @n: caluculate the square root
  * @i: iterator
+ *
+ * Return: the square root
  */
 
 int helper_sqrt_recursion(int n, int i)
