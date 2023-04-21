@@ -1,0 +1,30 @@
+#!/bin/bash
+
+# This script assumes that the Betty linter is installed on your system.
+# If not, please refer to the Betty documentation to install it.
+
+# Define the work directory
+
+WORK_DIR=$(pwd)
+
+# Find all .c files in the directory and its subdirectories
+C_FILES=$(find "$WORK_DIR" -type f -name "*.c")
+
+# Loop over each .c file
+for file in $C_FILES
+do
+  # Run the linter and save the output to a variable
+  linter_output=$(betty "$file")
+
+  # Check if there were any errors
+  if [[ $linter_output == *"ERROR"* ]]; then
+    # If there were errors, fix them automatically
+    betty --fix "$file"
+    echo "Fixed errors in $file"
+  else
+    # If there were no errors, print a message to the console
+    echo "No errors found in $file"
+  fi
+done
+
+

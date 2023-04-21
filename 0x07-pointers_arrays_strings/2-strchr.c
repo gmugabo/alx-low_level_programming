@@ -2,6 +2,7 @@
 
 /*
  * _strchr - function that finds a character in a string
+ * Description: _strchr finds a character in a string
  * @s: string being searched
  * @c: character to be found
  *
