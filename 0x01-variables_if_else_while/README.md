@@ -1,1 +1,1 @@
-Variables, if else statements, while loop
+variables, if else statement, while loop
